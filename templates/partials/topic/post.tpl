@@ -16,6 +16,10 @@
 			<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
 		</strong>
 
+		<img data-uid="{posts.user.uid}" src="{posts.user.alliancepicture}" itemprop="image" style="width: 15px;">
+		<img data-uid="{posts.user.uid}" src="{posts.user.corppicture}" itemprop="image" style="width: 15px;">
+
+
 		<!-- IMPORT partials/topic/badge.tpl -->
 
 		<!-- IF posts.user.banned -->
